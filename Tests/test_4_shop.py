@@ -34,7 +34,9 @@ class LoginShop():
 
 # >--------------------------------------------------------------------------- #
 
-@pytest.mark.skip
+# @pytest.mark.skip
+
+
 class Test_Shop_04(BaseTest, LoginShop):
 
     @allure.severity(allure.severity_level.MINOR)
@@ -47,7 +49,7 @@ class Test_Shop_04(BaseTest, LoginShop):
         assert book_title == TestData.BOOK_TITLE_HTML5_FORM
 
 
-@pytest.mark.skip
+# @pytest.mark.skip
 class Test_Shop_05(BaseTest, LoginShop):
 
     def test_05_products_quantity_in_category(self):
@@ -63,7 +65,7 @@ class Test_Shop_05(BaseTest, LoginShop):
         assert qty.books_qty == qty.html_qty == exp_qty
 
 
-@pytest.mark.skip
+# @pytest.mark.skip
 class Test_Shop_06(BaseTest, LoginShop):
 
     def test_06_1_product_sorting(self):
@@ -83,7 +85,7 @@ class Test_Shop_06(BaseTest, LoginShop):
         assert select_value
 
 
-@pytest.mark.skip
+# @pytest.mark.skip
 class Test_Shop_07(BaseTest, LoginShop):
 
     def test_07_old_book_price(self):
@@ -116,7 +118,7 @@ class Test_Shop_07(BaseTest, LoginShop):
         assert True
 
 
-@pytest.mark.skip
+# @pytest.mark.skip
 class Test_Shop_08(BaseTest, LoginShop):
 
     def test_08_1_check_item_in_the_cart(self):
@@ -157,7 +159,7 @@ class Test_Shop_08(BaseTest, LoginShop):
             cart.total == exp_cart_total)
 
 
-@pytest.mark.skip
+# @pytest.mark.skip
 class Test_Shop_09(BaseTest, LoginShop):
 
     def test_09_1_assert_qty_in_the_cart(self):
@@ -185,7 +187,7 @@ class Test_Shop_09(BaseTest, LoginShop):
         assert coupon_msg == exp_coupon_msg
 
 
-@pytest.mark.skip
+# @pytest.mark.skip
 class Test_Shop_10(BaseTest, LoginShop):
 
     def test_10_shop_buy_the_book(self):
