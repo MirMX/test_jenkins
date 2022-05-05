@@ -6,4 +6,4 @@ Pages/__pycache__
 Tests/__pycache__
 .idea
 .vscode
-/t_env/
+env/
